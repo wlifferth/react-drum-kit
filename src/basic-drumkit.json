@@ -1,0 +1,14 @@
+{
+  "drums": [
+    {
+      "letter": "Q",
+      "name": "clap",
+      "audioPath": "drums/electro/Clap.wav"
+    },
+    {
+      "letter": "W",
+      "name": "cihat01",
+      "audioPath": "drums/electro/ClHat01.wav"
+    }
+  ]
+}

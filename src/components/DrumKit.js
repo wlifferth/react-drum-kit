@@ -1,13 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Drum from "./Drum";
 
-const DrumKit = (props) => {
+const DrumKit = ({ drums, playAudio }) => {
   const numDrums = 9;
-  const drums = [];
-  for (let i = 0; i < numDrums; i++) {
-    drums.push(<div className="drum">{i}</div>);
-  }
-  return <div id="display">{drums}</div>;
+  console.log(drums);
+  let drumComponents = drums.map((drumData, i) => {
+    return (
+      <Drum
+        key={i}
+        letter={drumData.letter}
+        drumName={drumData.name}
+        audioPath={drumData.audioPath}
+        playAudio={playAudio}
+      />
+    );
+  });
+  return <div id="display">{drumComponents}</div>;
 };
 
 DrumKit.propTypes = {};

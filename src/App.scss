@@ -40,6 +40,7 @@ $active-dip: 2px;
     background-color: white;
     margin: $drum-margin;
     padding: $drum-padding;
+    position: relative;
     display: inline-block;
     text-align: center;
     border-radius: 10px;
@@ -53,6 +54,33 @@ $active-dip: 2px;
     &:active {
       @include box-shadow($normal-box-shadow - $active-dip);
       margin: #{$drum-margin + $active-dip} #{$drum-margin - $active-dip} #{$drum-margin - $active-dip} #{$drum-margin + $active-dip};
+    }
+    .drumAnnotations {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 10px;
+
+      ::selection {
+        color: none;
+        background: none;
+    }
+    /* For Mozilla Firefox */
+    ::-moz-selection {
+        color: none;
+        background: none;
+    }
+
+      .drumName {
+          color: #aaa;
+      }
+
+      .drumShortcut {
+        color: #666;
+        font-size: 40px;
+        font-weight: bold;
+      }
+
     }
   }
 }
