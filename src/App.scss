@@ -49,6 +49,10 @@ $active-dip: 2px;
       width: #{($drum-container-tablet-width / 3) - ( ($drum-padding + $drum-margin) * 2)};
       height: #{($drum-container-tablet-width / 3) - ( ($drum-padding + $drum-margin) * 2)};
     }
+    @media screen and (max-width: $tablet-max) {
+      width: #{($drum-container-mobile-width / 3) - ( ($drum-padding + $drum-margin) * 2)};
+      height: #{($drum-container-mobile-width / 3) - ( ($drum-padding + $drum-margin) * 2)};
+    }
     max-height: 150px;
     min-height: 60px;
     background-color: white;
