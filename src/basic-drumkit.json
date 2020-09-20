@@ -22,17 +22,17 @@
     },
     {
       "letter": "A",
-      "name": "Cymbal02",
+      "name": "cymbal02",
       "audioPath": "drums/electro/Cymbal02.wav"
     },
     {
       "letter": "S",
-      "name": "HfHat",
+      "name": "hfhat",
       "audioPath": "drums/electro/HfHat.wav"
     },
     {
       "letter": "D",
-      "name": "Kick01",
+      "name": "kick01",
       "audioPath": "drums/electro/Kick01.wav"
     },
     {
@@ -52,13 +52,13 @@
     },
     {
       "letter": "C",
-      "name": "Kick03",
-      "audioPath": "drums/electro/Kick03.wav"
+      "name": "snr02",
+      "audioPath": "drums/electro/Snr02.wav"
     },
     {
       "letter": "V",
-      "name": "Kick03",
-      "audioPath": "drums/electro/Kick03.wav"
+      "name": "snr03",
+      "audioPath": "drums/electro/Snr03.wav"
     }
   ]
 }
