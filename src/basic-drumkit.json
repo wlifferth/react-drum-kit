@@ -7,8 +7,43 @@
     },
     {
       "letter": "W",
-      "name": "cihat01",
+      "name": "clhat01",
       "audioPath": "drums/electro/ClHat01.wav"
+    },
+    {
+      "letter": "E",
+      "name": "clhat02",
+      "audioPath": "drums/electro/ClHat02.wav"
+    },
+    {
+      "letter": "A",
+      "name": "cymbal01",
+      "audioPath": "drums/electro/Cymbal01.wav"
+    },
+    {
+      "letter": "S",
+      "name": "Cymbal02",
+      "audioPath": "drums/electro/Cymbal02.wav"
+    },
+    {
+      "letter": "D",
+      "name": "HfHat",
+      "audioPath": "drums/electro/HfHat.wav"
+    },
+    {
+      "letter": "Z",
+      "name": "Kick01",
+      "audioPath": "drums/electro/Kick01.wav"
+    },
+    {
+      "letter": "X",
+      "name": "Kick02",
+      "audioPath": "drums/electro/Kick02.wav"
+    },
+    {
+      "letter": "C",
+      "name": "Kick03",
+      "audioPath": "drums/electro/Kick03.wav"
     }
   ]
 }

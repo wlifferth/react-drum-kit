@@ -13,9 +13,7 @@ const Drum = ({ letter, drumName, audioPath, playAudio }) => {
       <div className="drumAnnotations">
         <span className="drumName">{drumName}</span>
         <span className="drumShortcut">{letter}</span>
-        <audio id={audioId}>
-          <source src={"/" + audioPath} type="audio/wav"></source>
-        </audio>
+        <audio id={audioId} src={"/" + audioPath} type="audio/wav"></audio>
       </div>
     </div>
   );
