@@ -10,6 +10,7 @@ const cachedAudio = {};
 const playAudio = (audioId) => {
   console.log("Got to playAudio!");
   var audio = document.getElementById(audioId);
+  if (audio === null) return;
   if (audio.paused) {
     console.log(`AUDIO src=${audio.src}`);
     audio.play();
@@ -37,6 +38,11 @@ const playAudio = (audioId) => {
       `New length of cache for ${audio.src}: ${cachedAudio[audio.src].length}`
     );
   }
+};
+
+document.onkeypress = (e) => {
+  const key = e.key.toUpperCase();
+  playAudio("audio" + key);
 };
 
 function App() {

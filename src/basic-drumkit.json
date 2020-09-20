@@ -16,32 +16,47 @@
       "audioPath": "drums/electro/ClHat02.wav"
     },
     {
-      "letter": "A",
+      "letter": "R",
       "name": "cymbal01",
       "audioPath": "drums/electro/Cymbal01.wav"
     },
     {
-      "letter": "S",
+      "letter": "A",
       "name": "Cymbal02",
       "audioPath": "drums/electro/Cymbal02.wav"
     },
     {
-      "letter": "D",
+      "letter": "S",
       "name": "HfHat",
       "audioPath": "drums/electro/HfHat.wav"
     },
     {
-      "letter": "Z",
+      "letter": "D",
       "name": "Kick01",
       "audioPath": "drums/electro/Kick01.wav"
     },
     {
-      "letter": "X",
-      "name": "Kick02",
+      "letter": "F",
+      "name": "kick02",
       "audioPath": "drums/electro/Kick02.wav"
     },
     {
+      "letter": "Z",
+      "name": "kick03",
+      "audioPath": "drums/electro/Kick03.wav"
+    },
+    {
+      "letter": "X",
+      "name": "snr01",
+      "audioPath": "drums/electro/Snr01.wav"
+    },
+    {
       "letter": "C",
+      "name": "Kick03",
+      "audioPath": "drums/electro/Kick03.wav"
+    },
+    {
+      "letter": "V",
       "name": "Kick03",
       "audioPath": "drums/electro/Kick03.wav"
     }
