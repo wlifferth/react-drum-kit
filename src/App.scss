@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+}
+
+html {
+  background-color: #282c34;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding: 20px;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@mixin box-shadow($r) {
+  -webkit-box-shadow: $r $r 0px 0px rgba(187,187,187,1);
+-moz-box-shadow: $r $r 0px 0px rgba(187,187,187,1);
+box-shadow: $r $r 0px 0px rgba(187,187,187,1);
+}
+
+$drum-container-width: 1000px;
+$drum-margin: 10px;
+$drum-padding: 10px;
+$normal-box-shadow: 4px;
+$hover-dip: 1px;
+$active-dip: 2px;
+#display {
+  width: $drum-container-width;
+  margin: auto;
+
+  .drum {
+    vertical-align: top;
+    width: #{($drum-container-width / 4) - ( ($drum-padding + $drum-margin) * 2)};
+    height: #{($drum-container-width / 4) - ( ($drum-padding + $drum-margin) * 2)};
+    max-height: 150px;
+    background-color: white;
+    margin: $drum-margin;
+    padding: $drum-padding;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    @include box-shadow($normal-box-shadow);
+
+    &:hover {
+      @include box-shadow($normal-box-shadow - $hover-dip);
+      margin: #{$drum-margin + $hover-dip} #{$drum-margin - $hover-dip} #{$drum-margin - $hover-dip} #{$drum-margin + $hover-dip};
+    }
+  
+    &:active {
+      @include box-shadow($normal-box-shadow - $active-dip);
+      margin: #{$drum-margin + $active-dip} #{$drum-margin - $active-dip} #{$drum-margin - $active-dip} #{$drum-margin + $active-dip};
+    }
+  }
+}
